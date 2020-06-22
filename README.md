@@ -16,3 +16,6 @@ Tarot Journal
 
 ![domain-model](/img/Tarot-Journal-Domain-Model.pdf)
 
+
+
+
