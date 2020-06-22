@@ -1,11 +1,14 @@
 'use strict';
 
 // get past data from local storage
+var pastReading = localStorage.getItem('past-readings')
+pastReading = JSON.parse(pastReading);
 
-function render(){
+function renderEntries(){
   // render card images
   // render full card descriptions
 }
+
 
 function getJournalEntries{
   // remember to JSON.parse stringy file
