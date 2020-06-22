@@ -38,6 +38,16 @@ function render(){
 
 // event handler function
 
+function Reading(past, present, future, date) {
+  this.past = past;
+  this.present = present;
+  this.future = future;
+  this.date = date;
+  this.reflection;
+}
+
+
+
 function storeLocal(){
 
 }
@@ -51,5 +61,5 @@ function handleEvent(event){
   pickCard();
   storeLocal();
   render();
-}
 
+}
