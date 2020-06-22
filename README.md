@@ -14,3 +14,5 @@ Tarot Journal
 - Journal = You can access your previous tarot readings with the meanings listed under the day the reading was performed. The images of the cards will also appear at the bottom of the daily journal entry. There will also be a text field that will allow the user to input their own reflection of the tarot reading. 
 - About Page = History of Tarot, Links to other resources 
 
+![domain-model](img/Tarot-Journal-Domain-Model.pdf)
+
