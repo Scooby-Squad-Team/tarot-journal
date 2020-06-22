@@ -243,7 +243,6 @@ function Reading(past, present, future, date) {
 }
 
 
-
 function storeLocal(){
   var dateField = document.getElementById('user-input');
   date = dateField.children[1].value;
