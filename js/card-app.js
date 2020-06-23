@@ -1,6 +1,5 @@
 'use strict';
 
-
 // declare functions for displaying cards
 
 // randomizer function
