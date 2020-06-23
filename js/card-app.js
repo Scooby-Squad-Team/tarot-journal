@@ -91,61 +91,61 @@ var justiceDescription = ('The Justice card advises you to listen carefully as o
 
 var hangedImgSrc = ('/img/hermetic_tarot12.jpg');
 var hangedBlurb = ('The Hanged Man is a card that comes up when you are in limbo');
-var hangedDescription = ('');
+var hangedDescription = ('This represents a good time to be philosophical, to study and meditate upon the position you find yourself in, and to form resolutions for the moment you become free again. Only those who possess wisdom, patience, and optimism will be able to see through limitations, including possible humiliation, to grasp the inspiring lesson one can gain from such an experience');
 
 // ========== 13 - Death ========== //
 
 var deathImgSrc = ('/img/hermetic_tarot13.jpg');
 var deathBlurb = ('One of the most misunderstood cards in a Tarot deck, Death is not a card about physical death');
-var deathDescription = ('');
+var deathDescription = ('The Death card advises you to detach from the old order. You may want to close accounts, complete unfinished tasks, and gather your harvest. It is time to move on. If you cut the cords that have bound you to old ways and outdated conventions, you could free yourself to join the sweep of incoming light. This is not an excuse to reject others or hurt them in any way. It is simply a time to move toward your ultimate interests. Do not allow nostalgia and outworn loyalties to hold you back. Be willing to go through whatever it takes to get to where you really want to be');
 
 // ========== 14 - Temperance ========== //
 
 var temperanceImgSrc = ('/img/hermetic_tarot14.jpg');
 var temperanceBlurb = ('The Temperance card is a master of moderation');
-var temperanceDescription = ('');
+var temperanceDescription = ('The Temperance card advises you to identify and seek the missing ingredients in your life. Marshal your known skills and abilities and do what needs to be done to complete your mission. Prepare to use spiritual practices, studies, or lifestyle changes that can assist you in your quest. A tremendous amount of benefit is available if you can organize yourself and be disciplined at this time');
 
 // ========== 15 - The Devil ========== //
 
 var devilImgSrc = ('/img/hermetic_tarot15.jpg');
 var devilBlurb = ('The Devil card carries heavy feelings of restraint and powerlessness');
-var devilDescription = ('');
+var devilDescription = ('The Devil card advises that you show some spunk. There may be nothing to be gained by trying to be subtle or strategic in this situation. Assert your agenda, express yourself honestly, and let the chips fall where they may. Your best bet could be to express your true emotions, possibly even including anger. Acknowledge that you have whatever feelings you have. While it may not be necessary to act out what you feel in every situation, accepting the power and depth of your inner experience enables you to remain true to yourself');
 
 // ========== 16 - The Tower ========== //
 
 var towerImgSrc = ('/img/hermetic_tarot16.jpg');
 var towerBlurb = ('Perhaps the most dreaded card in a Tarot deck, The Tower is a representation of destruction');
-var towerDescription = ('');
+var towerDescription = ('With the Tower card, think of yourself as an agent of transformation. This self-sacrificing role is likely to create stressful situations. Your vision shows you that a radical change has already been unleashed by forces much larger than mere mortals, and therefore you are no longer resisting. Now you may be at the forefront, acknowledging and accepting the bracing presence of the future bursting in on the present. Try to mediate the harsher parts of the changes as they unfold, so the most vulnerable are the most cushioned. Acknowledge yourself, as well as the others in your life, who are offering their resources to usher in a better future');
 
 // ========== 17 - The Star ========== //
 
 var starImgSrc = ('/img/hermetic_tarot17.jpg');
 var starBlurb = ('The Star is the embodiment of hope and healing');
-var starDescription = ('');
+var starDescription = ('This card could also be called The Celestial Mandate -- that which refers us back to our reason for being, our mission in this lifetime. The Star reminds us that, in a sense, we are agents of divine will in our day-to-day lives. If we let go of the idea that we are supposed to be in control, we can more easily notice and appreciate the synchronicities that are nudging us along. In this way, we become more conscious of the invisible helping hand, and we better understand our place within -- and value to -- the larger cosmos');
 
 // ========== 18 - The Moon ========== //
 
 var moonImgSrc = ('/img/hermetic_tarot18.jpg');
 var moonBlurb = ('The Moon card is greatly connected to your subconscious');
-var moonDescription = ('');
+var moonDescription = ('The Moon card refers to a deep state of sensitivity and imaginative impressionability, developed within a womb of deep relaxation. Here we dream and go into trance, have visions and receive insights, wash in and out with the psychic tides, and experience deep mystical and/or terrifying realities beyond our ordinary senses. In a state of expanded consciousness, we cannot always control what happens. The Moon card represents the ultimate test of a soul\'s integrity, where the membrane between the self and the unknown is removed, and the drop of individuality re-enters the ocean of being. What transpires next is between a soul and its maker');
 
 // ========== 19 - The Sun ========== //
 
 var sunImgSrc = ('/img/hermetic_tarot19.jpg');
 var sunBlurb = ('The Sun is a powerfully uplifting card, representing happiness, joy, vitality, and optimism');
-var sunDescription = ('');
+var sunDescription = ('The Sun card is about the self -- who you are and how you cultivate your personality and character. The Sun\'s radiance is where one\'s original nature can be encountered in health and safety. The limitations of time and space are stripped away; the soul is refreshed and temporarily protected from the chaos outside the garden walls. Under the light of the Sun, life reclaims its primordial goodness, truth, and beauty. If one person is shown on this card, it is usually signifying a human incarnation of the divine. When two humans are shown, the image is portraying a resolution of the tension between opposites at all levels. It\'s as if this card is saying "You can do no wrong -- it\'s all to the good!"');
 
 // ========== 20 - Judgement ========== //
 
 var judgementImgSrc = ('/img/hermetic_tarot20.jpg');
 var judgementBlurb = ('Judgment is a card where your past and your future come together');
-var judgementDescription = ('');
+var judgementDescription = ('The Judgment card advises that you allow yourself to grow, transform, and release hidden potentials within yourself. Divest yourself of fruitless endeavors without neglecting your duties. At the same time, invest your energies in new growth. It\'s not necessary to reject others, but refuse to be manipulated by those who cry foul. This process isn\'t about them anyway. It is about you and the desire you feel to change your life and become a more complete person. Trust your impulses and allow this remarkable awakening to happen');
 
 // ========== 21 - The World ========== //
 
 var worldImgSrc = ('/img/hermetic_tarot21.jpg');
 var worldBlurb = ('The World is the last card of the Major Arcana, and represents completion, success, and fulfillment');
-var worldDescription = ('');
+var worldDescription = ('The World card may be giving you permission to do whatever you want. Presently, your motivation is close to the will of the divine. Even if you commit an error, it will be turned to the greater good. Stay active and just keep moving forward. It is unnecessary to keep checking or interrupting your spontaneity with calculation. Rather than look for consensus or affirmation from others, simply dance the dance. In other words, express yourself, react naturally, and let the chips fall where they may. What matters is divine intention. Whether or not human beings approve is less important. If you allow your ego to inflate, however, you cease to be useful to the greater plan');
 
 // ========== Card Constructor ========== //
 
@@ -195,13 +195,15 @@ function pickCard(){
   do {
     futureCard = randomizer(0, Card.collection.length);
   } while (futureCard === pastCard || futureCard === presentCard);
-
 }
 
 // render cards to web page
 
 function render(){
+
   var pastDiv = document.getElementById('past');
+  pastDiv.innerHTML = '';
+
   var pastImg = Card.collection[pastCard].imgSrc;
   var pastBlurb = Card.collection[pastCard].blurb;
   var addPastImg = document.createElement('img');
@@ -210,7 +212,10 @@ function render(){
   addPastBlurb.textContent = pastBlurb;
   pastDiv.appendChild(addPastImg);
   pastDiv.appendChild(addPastBlurb);
+
   var presentDiv = document.getElementById('present');
+  presentDiv.innerHTML = '';
+
   var presentImg = Card.collection[presentCard].imgSrc;
   var presentBlurb = Card.collection[presentCard].blurb;
   var addPresentImg = document.createElement('img');
@@ -219,7 +224,10 @@ function render(){
   addPresentBlurb.textContent = presentBlurb;
   presentDiv.appendChild(addPresentImg);
   presentDiv.appendChild(addPresentBlurb);
+
   var futureDiv = document.getElementById('future');
+  futureDiv.innerHTML = '';
+
   var futureImg = Card.collection[futureCard].imgSrc;
   var futureBlurb = Card.collection[futureCard].blurb;
   var addFutureImg = document.createElement('img');
@@ -228,6 +236,7 @@ function render(){
   addFutureBlurb.textContent = futureBlurb;
   futureDiv.appendChild(addFutureImg);
   futureDiv.appendChild(addFutureBlurb);
+
 }
 
 // event handler function
@@ -243,18 +252,14 @@ function Reading(past, present, future, date) {
 }
 
 
-
 function storeLocal(){
   var dateField = document.getElementById('user-input');
   date = dateField.children[1].value;
   var storeReading = localStorage.getItem('past-readings');
   storeReading = JSON.parse(storeReading);
-  if (storeReading === null){
-    storeReading = [];
-  }
   storeReading.push(new Reading(pastCard, presentCard, futureCard, date));
   var stringifyReadings = JSON.stringify(storeReading);
-  localStorage.setItem('past-readings', stringifyReadings);
+  localStorage.setItem('Stored Readings', stringifyReadings);
 }
 // event listener for submit
 

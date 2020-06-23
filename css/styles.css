@@ -50,3 +50,61 @@ section {
   position: relative;
 }
 
+#table {
+  outline: green dashed 2px;
+  float: left;
+  width: 1250px;
+  height: 1000px;
+
+  margin-left: 150px;
+  
+  
+  background-image: url('/img/green-leaf-plant-on-brown-wooden-table-top-thumbnail.jpg');
+  background-repeat: no-repeat;
+
+  background-size: 100%;
+}
+
+
+
+/* ----- past card ----- */
+
+#past {
+  outline: blue dashed 2px;
+  max-width: 150px;
+  text-overflow: ;
+  float: left;
+
+}
+
+#past > img {
+  width: 25%;
+  height: 50%;
+}
+
+/* ----- present card ----- */
+
+#present {
+  outline: red dashed 2px;
+  width: 150px;
+  float: left;
+}
+
+#present > img {
+  width: 50%;
+  height: 50%;
+}
+
+/* ----- future card ----- */
+
+#future {
+  outline: yellow dashed 2px;
+  float: left;
+  max-width: 150px;
+}
+
+#future > img {
+  width: 50%;
+  height: 100%;
+}
+
