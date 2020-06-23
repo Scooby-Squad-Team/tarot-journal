@@ -15,11 +15,17 @@ function render() {
   var present = dateSelected.present;
   var future = dateSelected.future;
   var pastDivImg = document.getElementById('past');
+  pastDivImg.innerHTML = '';
   var pastDivDesc = document.getElementById('past-description');
+  pastDivDesc.innerHTML = '';
   var presentDivImg = document.getElementById('present');
-  var presentDivDesc = document.getElementById('present-description');  
+  presentDivImg.innerHTML = '';
+  var presentDivDesc = document.getElementById('present-description');
+  presentDivDesc.innerHTML = '';
   var futureDivImg = document.getElementById('future');
+  futureDivImg.innerHTML = '';
   var futureDivDesc = document.getElementById('future-description');
+  futureDivDesc.innerHTML = '';
   var pastImg = Card.collection[past].imgSrc;
   var pastDesc = Card.collection[past].description;
   var addPastImg = document.createElement('img');
@@ -44,6 +50,15 @@ function render() {
   addfutureDesc.textContent = futureDesc;
   futureDivImg.appendChild(addfutureImg);
   futureDivDesc.appendChild(addfutureDesc);
+  var reflection = dateSelected.reflection;
+
+  var reflectionDiv = document.getElementById('reflection');
+  reflectionDiv.innerHTML = '';
+  if (reflection){
+    var addReflection = document.createElement('p');
+    addReflection.textContent = reflection;
+    reflectionDiv.appendChild(addReflection);
+  }
   // render full card descriptions
 }
 
@@ -77,13 +92,27 @@ function handleDateSelect(event) {
   render();
 }
 
-var reflection = document.getElementById('user-reflection');
+var reflection = document.getElementById('reflection-form');
 reflection.addEventListener('submit', handleSubmitReflection);
 
-function handleSubmitReflection() {
+function handleSubmitReflection(event) {
   // save reflection entries to array[index].reflection
   // resave array to localstorage (json.stringify, setItem)
+
+  event.preventDefault();
+  var selectElement = document.getElementById('user-reflection');
+  if(dateSelected.reflection === null){
+    dateSelected.reflection = selectElement.value;
+  }
+  else{
+    dateSelected.reflection = dateSelected.reflection + ' ' + selectElement.value;
+  }
+
+  var stringifyPastReading = JSON.stringify(pastReading);
+  localStorage.setItem('past-readings', stringifyPastReading);
+
   getJournalEntries();
+  render();
 }
 
 
