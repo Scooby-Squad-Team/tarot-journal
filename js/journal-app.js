@@ -59,7 +59,6 @@ function populateDateDropdown() {
 
 populateDateDropdown();
 
-// getJournalEntries();
 
 // event listener for selecting a date
 
