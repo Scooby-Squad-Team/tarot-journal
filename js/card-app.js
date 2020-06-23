@@ -86,9 +86,12 @@ function storeLocal(){
   date = dateField.children[1].value;
   var storeReading = localStorage.getItem('past-readings');
   storeReading = JSON.parse(storeReading);
+  if(storeReading === null){
+    storeReading = [];
+  }
   storeReading.push(new Reading(pastCard, presentCard, futureCard, date));
   var stringifyReadings = JSON.stringify(storeReading);
-  localStorage.setItem('Stored Readings', stringifyReadings);
+  localStorage.setItem('past-readings', stringifyReadings);
 }
 // event listener for submit
 
