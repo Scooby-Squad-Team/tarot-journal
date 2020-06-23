@@ -62,6 +62,13 @@ As a user I would like to be directed towards more in-depth information regardin
 I would like to quickly link to outside resources such as books, videos, other sites with more information about the practice and history of tarot. 
 
 
+# Works Cited
+
+tarot card descriptions: https://www.tarot.com/tarot/cards/major-arcana 
+
+
+# Wireframes & Domain Model
+
 ![domain-model](/img/Tarot-Journal-Domain-Model.jpg)
 ![wireframe1](/img/wireframe-1.jpg)
 ![wireframe2](/img/wireframe-2.jpg)
