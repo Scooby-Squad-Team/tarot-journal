@@ -24,12 +24,12 @@ function pickCard(){
   do {
     futureCard = randomizer(0, Card.collection.length);
   } while (futureCard === pastCard || futureCard === presentCard);
-
 }
 
 // render cards to web page
 
 function render(){
+
   var pastDiv = document.getElementById('past');
   pastDiv.innerHTML = '';
 
@@ -37,10 +37,12 @@ function render(){
   var pastBlurb = Card.collection[pastCard].blurb;
   var addPastImg = document.createElement('img');
   addPastImg.src = pastImg;
+
   var addPastBlurb = document.createElement('p');
   addPastBlurb.textContent = pastBlurb;
   pastDiv.appendChild(addPastImg);
   pastDiv.appendChild(addPastBlurb);
+
   var presentDiv = document.getElementById('present');
   presentDiv.innerHTML = '';
 
@@ -52,6 +54,7 @@ function render(){
   addPresentBlurb.textContent = presentBlurb;
   presentDiv.appendChild(addPresentImg);
   presentDiv.appendChild(addPresentBlurb);
+
   var futureDiv = document.getElementById('future');
   futureDiv.innerHTML = '';
 
@@ -63,6 +66,7 @@ function render(){
   addFutureBlurb.textContent = futureBlurb;
   futureDiv.appendChild(addFutureImg);
   futureDiv.appendChild(addFutureBlurb);
+
 }
 
 // event handler function
@@ -83,12 +87,9 @@ function storeLocal(){
   date = dateField.children[1].value;
   var storeReading = localStorage.getItem('past-readings');
   storeReading = JSON.parse(storeReading);
-  if (storeReading === null){
-    storeReading = [];
-  }
   storeReading.push(new Reading(pastCard, presentCard, futureCard, date));
   var stringifyReadings = JSON.stringify(storeReading);
-  localStorage.setItem('past-readings', stringifyReadings);
+  localStorage.setItem('Stored Readings', stringifyReadings);
 }
 // event listener for submit
 
