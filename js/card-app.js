@@ -29,17 +29,22 @@ function pickCard(){
 
 function render(){
 
+  //flip card inner
   var pastDiv = document.getElementById('past');
   pastDiv.innerHTML = '';
 
   var pastImg = Card.collection[pastCard].imgSrc;
   var pastBlurb = Card.collection[pastCard].blurb;
+
+  // "flip card front"
   var addPastImg = document.createElement('img');
   addPastImg.src = pastImg;
 
   var addPastBlurb = document.createElement('p');
   addPastBlurb.textContent = pastBlurb;
   pastDiv.appendChild(addPastImg);
+
+  // flip card back
   pastDiv.appendChild(addPastBlurb);
 
   var presentDiv = document.getElementById('present');
@@ -93,6 +98,7 @@ function storeLocal(){
   var stringifyReadings = JSON.stringify(storeReading);
   localStorage.setItem('past-readings', stringifyReadings);
 }
+
 // event listener for submit
 
 var submit = document.getElementById('user-input');
