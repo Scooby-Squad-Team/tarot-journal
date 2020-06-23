@@ -32,6 +32,21 @@ main > img {
   margin-left: 10%;
   margin-right: 10%;
   opacity: .5;
+}
+div {
+  position: absolute;
+  display: inline-block;
+  z-index: 2;
+  }
 
+#past {
+  
+}
+
+section {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
 }
 
