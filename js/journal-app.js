@@ -1,45 +1,49 @@
 'use strict';
 
 var pastReading;
+var dateSelected;
 // get past data from local storage
 function getJournalEntries() {
   pastReading = localStorage.getItem('past-readings');
   pastReading = JSON.parse(pastReading);
 }
-
 getJournalEntries();
 
-function render(pastImg, presentImg, futureImg, pastDesc, presentDesc, futureDesc) {
+function render() {
   // render card images
-
-  // var pastDiv = document.getElementById('past');
-  // var pastImg = Card.collection[pastCard].imgSrc;
-  // var pastBlurb = Card.collection[pastCard].blurb;
-  // var addPastImg = document.createElement('img');
-  // addPastImg.src = pastImg;
-  // var addPastBlurb = document.createElement('p');
-  // addPastBlurb.textContent = pastBlurb;
-  // pastDiv.appendChild(addPastImg);
-  // pastDiv.appendChild(addPastBlurb);
-  // var presentDiv = document.getElementById('present');
-  // var presentImg = Card.collection[presentCard].imgSrc;
-  // var presentBlurb = Card.collection[presentCard].blurb;
-  // var addPresentImg = document.createElement('img');
-  // addPresentImg.src = presentImg;
-  // var addPresentBlurb = document.createElement('p');
-  // addPresentBlurb.textContent = presentBlurb;
-  // presentDiv.appendChild(addPresentImg);
-  // presentDiv.appendChild(addPresentBlurb);
-  // var futureDiv = document.getElementById('future');
-  // var futureImg = Card.collection[futureCard].imgSrc;
-  // var futureBlurb = Card.collection[futureCard].blurb;
-  // var addFutureImg = document.createElement('img');
-  // addFutureImg.src = futureImg;
-  // var addFutureBlurb = document.createElement('p');
-  // addFutureBlurb.textContent = futureBlurb;
-  // futureDiv.appendChild(addFutureImg);
-  // futureDiv.appendChild(addFutureBlurb);
-
+  var past = dateSelected.past;
+  var present = dateSelected.present;
+  var future = dateSelected.future;
+  var pastDivImg = document.getElementById('past');
+  var pastDivDesc = document.getElementById('past-description');
+  var presentDivImg = document.getElementById('present');
+  var presentDivDesc = document.getElementById('present-description');  
+  var futureDivImg = document.getElementById('future');
+  var futureDivDesc = document.getElementById('future-description');
+  var pastImg = Card.collection[past].imgSrc;
+  var pastDesc = Card.collection[past].description;
+  var addPastImg = document.createElement('img');
+  addPastImg.src = pastImg;
+  var addPastDesc = document.createElement('p');
+  addPastDesc.textContent = pastDesc;
+  pastDivImg.appendChild(addPastImg);
+  pastDivDesc.appendChild(addPastDesc);
+  var presentImg = Card.collection[present].imgSrc;
+  var presentDesc = Card.collection[present].description;
+  var addpresentImg = document.createElement('img');
+  addpresentImg.src = presentImg;
+  var addpresentDesc = document.createElement('p');
+  addpresentDesc.textContent = presentDesc;
+  presentDivImg.appendChild(addpresentImg);
+  presentDivDesc.appendChild(addpresentDesc);
+  var futureImg = Card.collection[future].imgSrc;
+  var futureDesc = Card.collection[future].description;
+  var addfutureImg = document.createElement('img');
+  addfutureImg.src = futureImg;
+  var addfutureDesc = document.createElement('p');
+  addfutureDesc.textContent = futureDesc;
+  futureDivImg.appendChild(addfutureImg);
+  futureDivDesc.appendChild(addfutureDesc);
   // render full card descriptions
 }
 
@@ -62,12 +66,14 @@ populateDateDropdown();
 var entries = document.getElementById('date-dropdown');
 entries.addEventListener('submit', handleDateSelect);
 
-function handleDateSelect() {
+function handleDateSelect(event) {
+  event.preventDefault();
   var selectElement = document.getElementById('entry-date');
 
   for (var i in pastReading) {
-    if (selectElement.value = pastReading[i].date)
-    
+    if (selectElement.value === pastReading[i].date){
+      dateSelected = pastReading[i];
+    }
   }
   render();
 }
