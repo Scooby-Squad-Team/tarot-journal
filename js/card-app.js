@@ -208,6 +208,7 @@ function render(){
   var pastBlurb = Card.collection[pastCard].blurb;
   var addPastImg = document.createElement('img');
   addPastImg.src = pastImg;
+
   var addPastBlurb = document.createElement('p');
   addPastBlurb.textContent = pastBlurb;
   pastDiv.appendChild(addPastImg);
