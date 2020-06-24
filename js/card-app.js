@@ -33,8 +33,12 @@ function render(){
   var pastDiv = document.getElementById('past-card-front');
   pastDiv.innerHTML = '';
 
+  var pastDivNested = document.getElementById('past-card-back');
+  pastDivNested.innerHTML = '';
+
   var pastImg = Card.collection[pastCard].imgSrc;
   var pastBlurb = Card.collection[pastCard].blurb;
+  var backImg = ('/img/hermetic-tarot-back.jpg');
 
   // "flip card front"
 
@@ -58,6 +62,9 @@ function render(){
   var presentDiv = document.getElementById('present-card-front');
   presentDiv.innerHTML = '';
 
+  var presentDivNested = document.getElementById('present-card-back');
+  presentDivNested.innerHTML = '';
+
   var presentImg = Card.collection[presentCard].imgSrc;
   var presentBlurb = Card.collection[presentCard].blurb;
 
@@ -79,6 +86,9 @@ function render(){
 
   var futureDiv = document.getElementById('future-card-front');
   futureDiv.innerHTML = '';
+
+  var futureDivNested = document.getElementById('future-card-back');
+  futureDivNested.innerHTML = '';
 
   var futureImg = Card.collection[futureCard].imgSrc;
   var futureBlurb = Card.collection[futureCard].blurb;
