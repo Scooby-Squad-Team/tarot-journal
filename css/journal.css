@@ -66,8 +66,7 @@ ul li a:hover {
 
   background: none;
   
-
-  left: 250px;
+  left: 150px;
 
   margin-left: 20px;
   margin-bottom: 20px; 
@@ -124,7 +123,7 @@ div {
 
   align-items: center;
 
-  left: 250px;
+  left: 150px;
 
   margin: auto;
 
@@ -178,7 +177,7 @@ div {
 }
 
 #journal > h2:nth-child(2){
-  padding-left: 35px;
+  padding-left: 32px;
   padding-right: ;
 }
 
@@ -213,8 +212,7 @@ div {
 #description {
   font-family: 'Oswald', sans-serif;
 
-  flex-direction: column;
-  justify-content: center;
+  background-color: #A8C299;
 }
 
 h2 {
@@ -242,5 +240,120 @@ footer > p {
 
 footer > p > a {
   color: rgb(86, 107, 71);
+
+}
+
+/* ---------------- REFLECTIONS ------------ */
+
+#part-two {
+  display: flex;
+  position: absolute;
+
+  align-items: center;
+
+  left: 150px;
+
+  margin: auto;
+
+  top: 900px;
+
+  background-image: url(/img/journal-faed38.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: 0 0 25px #888888, 0 0 15px #064F0C;
+  
+  width: 1000px;
+  height: 700px;
+}
+
+#descriptions {
+  outline: red dashed 2px;
+
+  align-self: flex-start;
+  position: relative;
+
+  top: 50px;
+  /* margin-left: 15px; */
+
+  padding: 25px;
+
+}
+
+#descriptions > * {
+  background: none;
+
+  line-height: 24px;
+
+  padding: 7px;
+
+}
+
+#descriptions > * > * {
+  background: none;
+
+  font-family: roboto;
+  font-size: 18px;
+
+  text-indent: 40px;
+}
+
+/* ---------------- USER REFLECTION ------------ */
+
+#reflection-page {
+  display: flex;
+  position: absolute;
+
+  left: 150px;
+
+  margin: auto;
+
+  top: 1650px;
+
+  background-image: url(/img/journal-faed38.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: 0 0 25px #888888, 0 0 15px #064F0C;
+  
+  width: 1000px;
+  height: 700px;
+}
+
+#reflection-page * {
+  background: none;
+}
+
+#reflection-page > h2 {
+  outline: red dashed 2px;
+  position: absolute;
+
+  align-self: flex-start;
+
+  padding: 25px;
+
+  top: 50px;
+
+}
+
+#reflection-form {
+  position: relative;
+
+  align-self: flex-start;
+
+  padding: 25px;
+
+  top: 150px;
+  left: 75px;
+}
+
+#user-reflection {
+  width: 600px;
+  height: 100px;
+
+  align-content: flex-start;
+  text-align: start;
+
+  overflow: scroll;
 
 }
