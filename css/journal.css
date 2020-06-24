@@ -24,10 +24,12 @@ h1 {
   position: absolute;
   left: 10px;
   top: 60px;
-  color: #101010;
+  color: #A8C299;
+
   background-color: transparent;
   font-family: 'rye';
-  font-size: 30px;
+  font-size: 40px;
+
   letter-spacing: .10em;
   text-shadow: 0 0 10px #888888;
   }
@@ -59,19 +61,32 @@ ul li a:hover {
 }
 
 #date-dropdown{
+
+  position: relative;
+
+  background: none;
+  
+
+  left: 250px;
+
   margin-left: 20px;
   margin-bottom: 20px; 
+
+  z-index: 10;
 }
 
 #entry-date {
+  left: 100px;
+
   font-family: 'Oswald', sans-serif;
-  outline: none !important;
   border:2px solid #064F0C;
+
   box-shadow: 0 0 5px #666666;
   height: 35px;
   color: #064F0C;
-  background-color: #333333;
-  text-shadow: 0 0 10px #010801;
+
+  background-color: rgb(197, 218, 181);
+  /* text-shadow: 0 0 10px #010801; */
 }
 
 #submit {
@@ -80,13 +95,13 @@ ul li a:hover {
   border: 2px solid;
   padding: 4px;
   border-radius: 6px 6px;
-  background-color: #333333;
+  background-color: rgb(197, 218, 181);
   text-decoration:none;
   margin-left: 5px;
   height: 35px;
   width: 60px;
   box-shadow: 0 0 5px #666666;
-  text-shadow: 0 0 10px #010801;
+  /* text-shadow: 0 0 10px #010801; */
   font-size: 100%;
 }
 
@@ -137,11 +152,36 @@ div {
   align-self: center;
   justify-content: center;
 
-  /* top: 60px; */
   left: 75px;
 
   position: absolute;
 }
+
+#journal > h2 {
+  /* outline: red dashed 1px; */
+
+  background: none;
+  display: inline-flex;
+
+  align-self: flex-start;
+  position: relative;
+
+  text-align: center;
+
+  width: auto;
+
+  left: 200px;
+  top: 70px;
+
+  padding-right: 75px;
+
+}
+
+#journal > h2:nth-child(2){
+  padding-left: 35px;
+  padding-right: ;
+}
+
 
 #past > img {
   height: 350px;
