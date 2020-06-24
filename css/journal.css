@@ -74,3 +74,19 @@ ul li a:hover {
 #future > img {
   height: 500px;
 }
+
+footer {
+  width: 100%;
+  color:  rgb(164, 182, 150);
+  margin-top: 100px;
+  text-align: center;
+  padding: 5px;
+}
+
+footer > p {
+  padding: 2px;
+}
+
+footer > p > a {
+  color: rgb(86, 107, 71);
+}
