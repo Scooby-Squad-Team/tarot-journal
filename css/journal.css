@@ -144,6 +144,7 @@ ul li a:hover {
   border-radius: 30px;
 }
 
+
 #description {
   font-family: 'Oswald', sans-serif;
   display: flex;
@@ -160,4 +161,21 @@ h2 {
   margin: 10px;
   margin-top: 20px;
   text-decoration: underline;
+}
+
+footer {
+  width: 100%;
+  color: rgb(164, 182, 150);
+  margin-top: 100px;
+  text-align: center;
+  padding: 5px;
+}
+
+footer > p {
+  padding: 2px;
+}
+
+footer > p > a {
+  color: rgb(86, 107, 71);
+
 }
