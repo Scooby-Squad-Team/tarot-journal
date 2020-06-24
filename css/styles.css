@@ -1,9 +1,5 @@
 * {
   background-color: #222222;
-  animation: fadeInAnimation ease 1s; 
-  animation-iteration-count: 1; 
-  animation-fill-mode: forwards; 
-
 }
 
 
@@ -228,8 +224,6 @@ h1 {
 
 }
 
-
-
 #draw:hover {
   transform: scale(1.3);
   transition: 0.5s;
@@ -266,4 +260,23 @@ h1 {
 
 }
 
+/* ----- JOURNAL LINK BUTTON ----- */
+
+#journal-button {
+  display: inline-flex;
+
+  position: relative;
+  align-self: flex-end;
+
+  top: ;
+  left: -520px;
+  bottom: 165px;
+}
+
+button {
+  width: 250px;
+  height: 50px;
+
+  color: aliceblue;
+}
 

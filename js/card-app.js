@@ -38,7 +38,6 @@ function render(){
 
   var pastImg = Card.collection[pastCard].imgSrc;
   var pastBlurb = Card.collection[pastCard].blurb;
-  var backImg = ('/img/hermetic-tarot-back.jpg');
 
   // "flip card front"
 
@@ -135,6 +134,16 @@ function storeLocal(){
   localStorage.setItem('past-readings', stringifyReadings);
 }
 
+
+function displayButton(){
+  var journalButton = document.getElementById('journal-button');
+  var buttonCreate = document.createElement('button');
+  buttonCreate.textContent = ('Go To Journal For Further Reflection');
+
+  journalButton.appendChild(buttonCreate);
+}
+
+
 // event listener for submit
 
 var submit = document.getElementById('user-input');
@@ -145,6 +154,7 @@ function handleEvent(event){
   pickCard();
   storeLocal();
   render();
+  displayButton();
 }
 
 
