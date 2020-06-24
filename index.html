@@ -1,70 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarot Journal</title>
-    <link rel="stylesheet" href="../css/reset.css"><link rel="stylesheet" href="../css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
-  </head>
 
-  <body>
-    <header>
-      <img src="../img/starry-sky-green-209571.jpg" alt="Starry Green Sky">
-      <nav>
-        <ul>
-          <li><a href="/pages/journal.html">Journal</a></li>
-          <li><a href="/pages/about.html">About</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarot Journal</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+</head>
 
-    <main>
-      <!-- <img src="/img/green-leaf-plant-on-brown-wooden-table-top-thumbnail.jpg" alt="Wooden Table"> -->
+<body>
+  <header>
+    <img src="../img/starry-sky-green-209571.jpg" alt="Starry Green Sky">
+    <nav>
+      <ul>
+        <li><a href="/pages/journal.html">Journal</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <h1>Tarot Journal</h1>
+  <main>
+    <!-- <img src="/img/green-leaf-plant-on-brown-wooden-table-top-thumbnail.jpg" alt="Wooden Table"> -->
 
-      <section id="table">
-        <!-- card 1 -->
-        <div class="card-wrapper" id="past">
-          <div class="front" id="past-card-front"></div>
-          <div class="back" id="past-card-back"></div>
-        </div> 
+    <h1>Tarot Journal</h1>
 
-        <!-- card 2 -->
-        <div class="card-wrapper" id="present">
-          <div class="front" id="present-card-front"></div>
-          <div class="back" id="present-card-back"></div>
-        </div>
+    <section id="table">
+      <!-- card 1 -->
+      <div class="card-wrapper" id="past">
+        <div class="front" id="past-card-front"></div>
+        <div class="back" id="past-card-back"></div>
+      </div>
 
-        <!-- card 3 -->
-        <div class="card-wrapper" id="future">
-          <div class="front" id="future-card-front"></div>
-          <div class="back" id="future-card-back"></div>
-        </div>
+      <!-- card 2 -->
+      <div class="card-wrapper" id="present">
+        <div class="front" id="present-card-front"></div>
+        <div class="back" id="present-card-back"></div>
+      </div>
 
-        <form id="user-input">
+      <!-- card 3 -->
+      <div class="card-wrapper" id="future">
+        <div class="front" id="future-card-front"></div>
+        <div class="back" id="future-card-back"></div>
+      </div>
+
+      <form id="user-input">
+        <fieldset>
+          <legend id="try-again"></legend>
           <input id="date" type="date">
           <input id="draw" type="submit" value="Draw Cards">
-        </form>
-  
-        <div id="journal-button"></div>
+        </fieldset>
+      </form>
+      
+      <div id="journal-button"></div>
 
-      </section>
+    </section>
 
-    </main>
+  </main>
 
-    <footer>
-      <p>Copyright stuff ™ ® ©</p>
-      <p>Date Created</p>
-      <p><a href="https://github.com/Scooby-Squad-Team">link to repository</a></p>
-      <p>developed by: Hexx King, Meghan Domeck, Matt Herriges, Chandler Puckett</p>
-      <p>tarot card descriptions cited from: https://www.tarot.com/tarot/cards/major-arcana </p>
-    </footer>
+  <footer>
+    <p>Copyright stuff ™ ® ©</p>
+    <p>June 2020, Final Project</p>
+    <p>developed by: Hexx King, Meghan Domeck, Matt Herriges, Chandler Puckett</p>
+    <p><a href="https://github.com/Scooby-Squad-Team">GitHub</a></p>
+    <p><a href= "https://www.tarot.com/tarot/cards/major-arcana">tarot card descriptions source</a></p>
+  </footer>
 
-    <script src="../js/app.js"></script>
-    <script src="../js/card-app.js"></script>
-  </body>
+  <script src="../js/app.js"></script>
+  <script src="../js/card-app.js"></script>
+</body>
 
 
 </html>

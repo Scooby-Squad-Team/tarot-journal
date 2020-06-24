@@ -280,3 +280,38 @@ button {
   color: aliceblue;
 }
 
+fieldset {
+  background-image: none;
+  background-color: transparent;
+}
+
+legend {
+  background-color: rgba(168, 173, 192, 0.774);
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 25px;
+  margin-left: 5px;
+  font-weight: bolder;
+}
+
+legend:empty {
+  background-color: transparent;
+  border: none;
+  border-radius: 25px;
+}
+
+footer {
+  width: 100%;
+  color:  rgb(164, 182, 150);
+  margin-top: 100px;
+  text-align: center;
+  padding: 5px;
+}
+
+footer > p {
+  padding: 2px;
+}
+
+footer > p > a {
+  color: rgb(86, 107, 71);
+}
