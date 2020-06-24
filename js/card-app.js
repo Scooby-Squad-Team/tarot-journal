@@ -112,17 +112,17 @@ function storeLocal() {
   date = dateField.value;
   var storeReading = localStorage.getItem('past-readings');
   storeReading = JSON.parse(storeReading);
+  var legend = document.getElementById('try-again');
   if (storeReading === null) {
     storeReading = [];
   }
   for (var i = 0; i < storeReading.length; i++) {
     if (date === storeReading[i].date) {
-      var legend = document.getElementById('try-again');
       legend.textContent = 'Please choose a new date';
       return;
     }
   }
-
+  legend.innerHTML = '';
   storeReading.push(new Reading(pastCard, presentCard, futureCard, date));
   var stringifyReadings = JSON.stringify(storeReading);
   localStorage.setItem('past-readings', stringifyReadings);
