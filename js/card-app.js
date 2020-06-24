@@ -4,18 +4,23 @@
 
 // randomizer function
 
-function randomizer(min, max){
+function randomizer(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-// use randomizer to pick images
 var pastCard;
 var presentCard;
 var futureCard;
 var storeReading = [];
 var date;
+var currentDate = new Date().toISOString().slice(0, 10);
+var dateField = document.getElementById('date');
+dateField.value = currentDate;
 
-function pickCard(){
+
+// use randomizer to pick images
+
+function pickCard() {
   pastCard = randomizer(0, Card.collection.length);
   do {
     presentCard = randomizer(0, Card.collection.length);
@@ -27,7 +32,7 @@ function pickCard(){
 
 // render cards to web page
 
-function render(){
+function render() {
 
   //flip
   var pastDiv = document.getElementById('past-card-front');
@@ -102,14 +107,22 @@ function Reading(past, present, future, date) {
 }
 
 
-function storeLocal(){
-  var dateField = document.getElementById('user-input');
-  date = dateField.children[1].value;
+function storeLocal() {
+  var dateField = document.getElementById('date');
+  date = dateField.value;
   var storeReading = localStorage.getItem('past-readings');
   storeReading = JSON.parse(storeReading);
-  if(storeReading === null){
+  if (storeReading === null) {
     storeReading = [];
   }
+  for (var i = 0; i < storeReading.length; i++) {
+    if (date === storeReading[i].date) {
+      var legend = document.getElementById('try-again');
+      legend.textContent = 'Please choose a new date';
+      return;
+    }
+  }
+
   storeReading.push(new Reading(pastCard, presentCard, futureCard, date));
   var stringifyReadings = JSON.stringify(storeReading);
   localStorage.setItem('past-readings', stringifyReadings);
@@ -120,7 +133,7 @@ function storeLocal(){
 var submit = document.getElementById('user-input');
 submit.addEventListener('submit', handleEvent);
 
-function handleEvent(event){
+function handleEvent(event) {
   event.preventDefault();
   pickCard();
   storeLocal();
