@@ -240,6 +240,7 @@ h1 {
 
 }
 
+
 fieldset {
   background-image: none;
   background-color: transparent;
@@ -258,4 +259,19 @@ legend:empty {
   background-color: transparent;
   border: none;
   border-radius: 25px;
+
+footer {
+  width: 100%;
+  color:  rgb(164, 182, 150);
+  margin-top: 100px;
+  text-align: center;
+  padding: 5px;
+}
+
+footer > p {
+  padding: 2px;
+}
+
+footer > p > a {
+  color: rgb(86, 107, 71);
 }
