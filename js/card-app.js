@@ -1,12 +1,8 @@
 'use strict';
 
-// declare functions for displaying cards
-
-// randomizer function
-
-function randomizer(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
+// ==========================
+// ==== Global Variables ====
+// ==========================
 
 var pastCard;
 var presentCard;
@@ -17,6 +13,16 @@ var currentDate = new Date().toISOString().slice(0, 10);
 var dateField = document.getElementById('date');
 dateField.value = currentDate;
 
+// ==========================
+// ======= Functions ========
+// ==========================
+
+// declare functions for displaying cards
+// randomizer function
+
+function randomizer(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
 
 // use randomizer to pick images
 
@@ -94,8 +100,7 @@ function render() {
 
 }
 
-// event handler function
-
+// Constructor function for storing past readings in localStorage
 
 function Reading(past, present, future, date) {
   this.past = past;
@@ -132,6 +137,8 @@ function storeLocal() {
 
 var submit = document.getElementById('user-input');
 submit.addEventListener('submit', handleEvent);
+
+// event handler function
 
 function handleEvent(event) {
   event.preventDefault();
