@@ -24,11 +24,12 @@ h1 {
   position: absolute;
   left: 10px;
   top: 60px;
-  color: rgb(46, 80, 27);
+  color: #101010;
   background-color: transparent;
   font-family: 'rye';
   font-size: 30px;
   letter-spacing: .10em;
+  text-shadow: 0 0 10px #888888;
   }
 
 li {
@@ -36,25 +37,67 @@ li {
   display:block;
   list-style:none;
   float:left;
+  font-family: 'Oswald', sans-serif;
   }
 
 ul li a{
   display: inline-block;
-  background-color: #333333;
-  border: 3px solid;
+  background-color: #002A02;
+  border: 2px solid;
   padding: 4px;
   border-radius: 6px 6px;
-  color: rgb(46, 80, 27);
+  color: #555555;
   text-decoration:none;
+  box-shadow: 0 0 3px #888888;
   }
 
 ul li a:hover {
-  background-color: rgb(34, 61, 18);
-  color: #497049;
-  border: 4px solid;
+  background-color: #333333;
+  color: #064F0C;
+  border: 3px solid;
+  font-family: 'Oswald', sans-serif;
 }
 
-#journal {
+#date-dropdown{
+  margin-left: 20px;
+  margin-bottom: 20px; 
+}
+
+#entry-date {
+  font-family: 'Oswald', sans-serif;
+  outline: none !important;
+  border:2px solid #064F0C;
+  box-shadow: 0 0 5px #666666;
+  height: 35px;
+  color: #064F0C;
+  background-color: #333333;
+  text-shadow: 0 0 10px #010801;
+}
+
+#submit {
+  font-family: 'Oswald', sans-serif;
+  color: #064F0C;
+  border: 2px solid;
+  padding: 4px;
+  border-radius: 6px 6px;
+  background-color: #333333;
+  text-decoration:none;
+  margin-left: 5px;
+  height: 35px;
+  width: 60px;
+  box-shadow: 0 0 5px #666666;
+  text-shadow: 0 0 10px #010801;
+  font-size: 100%;
+}
+
+#submit:hover {
+  background-color: #444444;
+  color: #064F0C;
+  border: 3px solid;
+  font-family: 'Oswald', sans-serif;
+}
+
+#cards {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -65,15 +108,36 @@ ul li a:hover {
 
 #past > img {
   height: 500px;
+  margin: 20px;
+  box-shadow: 0 0 25px #888888, 0 0 15px #064F0C;
 }
 
 #present > img {
   height: 500px;
+  margin: 20px;
+  box-shadow: 0 0 25px #888888, 0 0 15px #064F0C;
 }
 
 #future > img {
   height: 500px;
+  margin: 20px;
+  box-shadow: 0 0 25px #888888, 0 0 15px #064F0C;
 }
+
+
+#description {
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  font-family: 'rye';
+  text-shadow: 0 0 10px #999999; 
+  color: #002A02;
+  font-size: 200%;
+  letter-spacing: .10em;
+  margin: 10px;
+  margin-top: 20px;
+  text-decoration: underline;
 
 footer {
   width: 100%;
@@ -89,4 +153,5 @@ footer > p {
 
 footer > p > a {
   color: rgb(86, 107, 71);
+
 }
