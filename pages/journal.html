@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarot Journal</title>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <!-- <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css"> -->
   </head>
 
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="/pages/journal.html">Journal</a></li>
           <li><a href="/pages/about.html">About</a></li>
         </ul>
@@ -40,23 +40,28 @@
   
 
         <!-- p tags are placeholders, will use JS to create & append info -->
+        <h2>Past</h2>
         <div id="past-description">
-          <h2>Past</h2>
         </div>
 
+        <h2>Present</h2>
         <div id="present-description">
-          <h2>Present</h2>
         </div>
 
+        <h2>Future</h2>
         <div id="future-description">
-          <h2>Future</h2>
         </div>
+
+        <h2>Your Reflection</h2>
+        <div id="reflection">
+        </div>
+
       </section>
 
 
       <!-- form for user to input a personal reflection on their reading -->
-      <form id="user-reflection">
-        <input type="text" placeholder="reflect on your daily reading">
+      <form id="reflection-form">
+        <input id="user-reflection" type="text" placeholder="reflect on your daily reading">
         <input type="submit" value="submit">
       </form>
 
