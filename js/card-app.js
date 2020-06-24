@@ -37,17 +37,21 @@ function render(){
   var pastBlurb = Card.collection[pastCard].blurb;
 
   // "flip card front"
+
   var addPastImg = document.createElement('img');
   addPastImg.src = pastImg;
+  pastDiv.appendChild(addPastImg);
 
   var pastCardBack = document.getElementById('past-card-back');
+  var cardBackDiv = document.createElement('div');
+  pastCardBack.appendChild(cardBackDiv);
 
   var addPastBlurb = document.createElement('p');
   addPastBlurb.textContent = pastBlurb;
-  pastDiv.appendChild(addPastImg);
 
   // flip card back
-  pastCardBack.appendChild(addPastBlurb);
+
+  cardBackDiv.appendChild(addPastBlurb);
 
 
 
@@ -59,14 +63,17 @@ function render(){
 
   var addPresentImg = document.createElement('img');
   addPresentImg.src = presentImg;
+  presentDiv.appendChild(addPresentImg);
+
 
   var presentCardBack = document.getElementById('present-card-back');
+  var presentBackDiv = document.createElement('div');
+  presentCardBack.appendChild(presentBackDiv);
 
   var addPresentBlurb = document.createElement('p');
   addPresentBlurb.textContent = presentBlurb;
 
-  presentDiv.appendChild(addPresentImg);
-  presentCardBack.appendChild(addPresentBlurb);
+  presentBackDiv.appendChild(addPresentBlurb);
 
 
 
@@ -78,14 +85,17 @@ function render(){
 
   var addFutureImg = document.createElement('img');
   addFutureImg.src = futureImg;
+  futureDiv.appendChild(addFutureImg);
+
 
   var futureCardBack = document.getElementById('future-card-back');
+  var futureBackDiv = document.createElement('div');
+  futureCardBack.appendChild(futureBackDiv);
 
   var addFutureBlurb = document.createElement('p');
   addFutureBlurb.textContent = futureBlurb;
 
-  futureDiv.appendChild(addFutureImg);
-  futureCardBack.appendChild(addFutureBlurb);
+  futureBackDiv.appendChild(addFutureBlurb);
 
 }
 
