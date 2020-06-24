@@ -27,7 +27,7 @@ var magicianDescription = ('Waite\'s image of The Magician as the solitary ritua
 // ========== 2 - The High Priestess ========== //
 
 var highPriestessImgSrc = ('/img/hermetic_tarot2.jpg');
-var highPriestessBlurb = ('The most intuitive, connected card in the whole Tarot deck, The High Priestess is a card of awareness and subconsciousness');
+var highPriestessBlurb = ('This card urges you to listen to your inner voice and to follow your instincts');
 var highPriestessDescription = ('In terms of the Major Arcana ordering of cards, The High Priestess appears in the sequence as soon as the Fool decides he wants to develop his innate powers, making a move toward becoming a Magician. The High Priestess is his first teacher, representing the inner life and the method for contacting it, as well as the contemplative study of nature and spiritual mystery');
 
 // ========== 3 - The Empress ========== //
@@ -46,7 +46,7 @@ var emperorDescription = ('The more enlightenment and cosmic perspective this en
 // ========== 5 - The Hierophant ========== //
 
 var hierophantImgSrc = ('/img/hermetic_tarot5.jpg');
-var hierophantBlurb = ('The Hierophant is like a messenger from the heavens. He is experienced in spirituality and guidance, and his job is to bring these lessons down to us here in the real world');
+var hierophantBlurb = ('The Hierophant is experienced in spirituality and guidance, his job is to bring these lessons down to us here in the real world');
 var hierophantDescription = ('The Hierophant advises that you return to the role of a meticulous student. Learn everything you can about your chosen area. Let that knowledge become a part of you and an operative influence on your day-to-day awareness. In this way, you can slowly and steadily establish real credibility in your field or chosen subject');
 
 // ========== 6 - The Lovers ========== //
@@ -58,13 +58,13 @@ var loversDescription = ('The Lovers card advises that you study your options an
 // ========== 7 - The Chariot ========== //
 
 var chariotImgSrc = ('/img/hermetic_tarot7.jpg');
-var chariotBlurb = ('The Chariot card is connected to your natural drive and determination, and can indicate an upcoming victory');
+var chariotBlurb = ('The Chariot is connected to your natural drive and determination, and can indicate an upcoming victory');
 var chariotDescription = ('The Chariot advises that you be prepared for changes that might include a move or an opportunity to travel. The Charioteer travels light and stays open to fresh experiences that change with every valley or mountain pass. You may be asked to live out of a suitcase and consider every place your home for a while. Be receptive to new people who come into your life. Most especially, become more fluid and taste the joys of freedom. The Charioteer is nothing if not self-sufficient. Be prepared and self-contained for the changes that will sweep in and carry you with them');
 
 // ========== 8 - Strength ========== //
 
 var strengthImgSrc = ('/img/hermetic_tarot8.jpg');
-var strengthBlurb = ('One of the most obviously named cards in a Tarot deck, Strength is most definitely a card about strength -- but not physical strength');
+var strengthBlurb = ('Strength is most definitely a card about strength -- but not physical strength');
 var strengthDescription = ('The Strength card advises that you assertively discipline yourself and separate self interest from enlightened wisdom. Deliberately identify with your intuition, even if it works against the desires of your willful ego. Demand and expect the same from others who have some power in this situation. You cannot challenge them to live to a higher standard if you, yourself, have not yet done so. Influence others by setting an example of integrity. Your self-esteem will increase to the degree that you succeed in your efforts');
 
 // ========== 9 - The Hermit ========== //
@@ -76,7 +76,7 @@ var hermitDescription = ('While an hourglass was an identifying feature on the e
 // ========== 10 - Wheel Of Fortune ========== //
 
 var wheelImgSrc = ('/img/hermetic_tarot10.jpg');
-var wheelBlurb = ('The Wheel of Fortune is constantly revolving -- sometimes you will be at the top, and sometimes you will be at the bottom');
+var wheelBlurb = ('This card reminds you that nothing is permanent, and you must cherish the lessons that this moment is bringing you');
 var wheelDescription = ('The Wheel of Fortune advises you follow the flow of events. Physical moves, spiritual awakenings, or dramatically changing social patterns could arise now. Accept these transformations. This is a safe place for you to be. You are watched over and protected as you go round and round the wheel. You will learn a lot. You will also learn it quickly, and what you absorb will benefit you for a long time to come');
 
 // ========== 11 - Justice ========== //
