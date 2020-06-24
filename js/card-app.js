@@ -1,6 +1,5 @@
 'use strict';
 
-
 // declare functions for displaying cards
 
 // randomizer function
@@ -30,42 +29,63 @@ function pickCard(){
 
 function render(){
 
-  var pastDiv = document.getElementById('past');
+  //flip
+  var pastDiv = document.getElementById('past-card-front');
   pastDiv.innerHTML = '';
 
   var pastImg = Card.collection[pastCard].imgSrc;
   var pastBlurb = Card.collection[pastCard].blurb;
+
+  // "flip card front"
   var addPastImg = document.createElement('img');
   addPastImg.src = pastImg;
+
+  var pastCardBack = document.getElementById('past-card-back');
 
   var addPastBlurb = document.createElement('p');
   addPastBlurb.textContent = pastBlurb;
   pastDiv.appendChild(addPastImg);
-  pastDiv.appendChild(addPastBlurb);
 
-  var presentDiv = document.getElementById('present');
+  // flip card back
+  pastCardBack.appendChild(addPastBlurb);
+
+
+
+  var presentDiv = document.getElementById('present-card-front');
   presentDiv.innerHTML = '';
 
   var presentImg = Card.collection[presentCard].imgSrc;
   var presentBlurb = Card.collection[presentCard].blurb;
+
   var addPresentImg = document.createElement('img');
   addPresentImg.src = presentImg;
+
+  var presentCardBack = document.getElementById('present-card-back');
+
   var addPresentBlurb = document.createElement('p');
   addPresentBlurb.textContent = presentBlurb;
-  presentDiv.appendChild(addPresentImg);
-  presentDiv.appendChild(addPresentBlurb);
 
-  var futureDiv = document.getElementById('future');
+  presentDiv.appendChild(addPresentImg);
+  presentCardBack.appendChild(addPresentBlurb);
+
+
+
+  var futureDiv = document.getElementById('future-card-front');
   futureDiv.innerHTML = '';
 
   var futureImg = Card.collection[futureCard].imgSrc;
   var futureBlurb = Card.collection[futureCard].blurb;
+
   var addFutureImg = document.createElement('img');
   addFutureImg.src = futureImg;
+
+  var futureCardBack = document.getElementById('future-card-back');
+
   var addFutureBlurb = document.createElement('p');
   addFutureBlurb.textContent = futureBlurb;
+
   futureDiv.appendChild(addFutureImg);
-  futureDiv.appendChild(addFutureBlurb);
+  futureCardBack.appendChild(addFutureBlurb);
 
 }
 
@@ -94,6 +114,7 @@ function storeLocal(){
   var stringifyReadings = JSON.stringify(storeReading);
   localStorage.setItem('past-readings', stringifyReadings);
 }
+
 // event listener for submit
 
 var submit = document.getElementById('user-input');
