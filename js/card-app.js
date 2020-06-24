@@ -136,11 +136,16 @@ function storeLocal(){
 
 
 function displayButton(){
+
   var journalButton = document.getElementById('journal-button');
+
   var buttonCreate = document.createElement('button');
+  buttonCreate.setAttribute('formaction', '/pages/journal.html');
+
   buttonCreate.textContent = ('Go To Journal For Further Reflection');
 
   journalButton.appendChild(buttonCreate);
+
 }
 
 
