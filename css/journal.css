@@ -98,23 +98,25 @@ ul li a:hover {
 }
 
 #journal {
+  display: flex;
+  margin: auto;
   background-image: url('/img/journal-paper.jpg');
   background-repeat: no-repeat;
-  background-size: 100%;
-  display: flex;
-  /* position: relative; */
+  background-size: 100%; 
 }
 
 #cards { 
-  /* display: flex; */
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+  background-color: transparent;
+  /* background-image: none; */
+  display: inline;
+  width: 1000x;
+  /* flex-direction: row;
+  flex-wrap: nowrap; */
+  /* justify-content: center;
   align-items: center;
-  align-content: center;
-  z-index: 10;
-  outline-color: red;
-  /* position: absolute; */
+  align-content: center; */
+  /* z-index: 10; */
+  position: absolute;
 }
 
 #past > img {
