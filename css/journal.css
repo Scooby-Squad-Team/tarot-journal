@@ -97,36 +97,84 @@ ul li a:hover {
   font-family: 'Oswald', sans-serif;
 }
 
-#cards {
+div {
+  background: none;
+}
+
+#journal {
+  /* outline: blue dashed 2px; */
+
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+  position: absolute;
+
   align-items: center;
-  align-content: center;
+
+  left: 250px;
+
+  margin: auto;
+
+  top: 150px;
+
+  background-image: url(/img/journal-faed38.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: 0 0 25px #888888, 0 0 15px #064F0C;
+  
+  width: 1000px;
+  height: 700px;
+}
+
+
+#cards { 
+  /* outline: red dashed 2px; */
+
+  background: none;
+  display: inline-flex;
+
+  width: 850px;
+
+  align-self: center;
+  justify-content: center;
+
+  /* top: 60px; */
+  left: 75px;
+
+  position: absolute;
 }
 
 #past > img {
-  height: 500px;
+  height: 350px;
   margin: 20px;
   box-shadow: 0 0 25px #888888, 0 0 15px #064F0C;
+  background: none;
+  border-radius: 10px;
 }
 
 #present > img {
-  height: 500px;
+  height: 350px;
   margin: 20px;
   box-shadow: 0 0 25px #888888, 0 0 15px #064F0C;
+  background: none;
+
+  border-radius: 10px;
 }
 
 #future > img {
-  height: 500px;
+  height: 350px;
   margin: 20px;
   box-shadow: 0 0 25px #888888, 0 0 15px #064F0C;
+  background: none;
+
+  border-radius: 10px;
 }
 
 
 #description {
   font-family: 'Oswald', sans-serif;
+
+  flex-direction: column;
+  justify-content: center;
 }
 
 h2 {
