@@ -161,6 +161,20 @@ function displayButton(){
   journalButton.appendChild(buttonCreate);
 }
 
+function controlSong() {
+  var targetElement = document.getElementById('ambience');
+  targetElement.volume = .5;
+}
+
+document.getElementById('toggle-audio').addEventListener('click', handleToggle);
+function handleToggle(){
+  var song = document.getElementById('ambience');
+  if (song.paused) {
+    song.play();
+  } else {
+    song.pause();
+  }
+}
 
 // event listener for submit
 
@@ -177,5 +191,6 @@ function handleEvent(event) {
   displayButton();
 }
 
+controlSong();
 
 
