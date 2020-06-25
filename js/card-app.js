@@ -47,7 +47,7 @@ function render() {
   var pastDivNested = document.getElementById('past-card-back');
   pastDivNested.innerHTML = '';
 
-  var pastImg = '++/' + Card.collection[pastCard].imgSrc;
+  var pastImg = Card.collection[pastCard].imgSrc;
   var pastBlurb = Card.collection[pastCard].blurb;
 
   // "flip card front"
@@ -75,7 +75,7 @@ function render() {
   var presentDivNested = document.getElementById('present-card-back');
   presentDivNested.innerHTML = '';
 
-  var presentImg = '++/' + Card.collection[presentCard].imgSrc;
+  var presentImg = Card.collection[presentCard].imgSrc;
   var presentBlurb = Card.collection[presentCard].blurb;
 
   var addPresentImg = document.createElement('img');
@@ -100,7 +100,7 @@ function render() {
   var futureDivNested = document.getElementById('future-card-back');
   futureDivNested.innerHTML = '';
 
-  var futureImg = '++/' + Card.collection[futureCard].imgSrc;
+  var futureImg = Card.collection[futureCard].imgSrc;
   var futureBlurb = Card.collection[futureCard].blurb;
 
   var addFutureImg = document.createElement('img');
