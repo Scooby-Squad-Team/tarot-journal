@@ -142,3 +142,46 @@ footer > p {
 footer > p > a {
   color: rgb(86, 107, 71);
 }
+
+
+button {
+  width: 250px;
+  height: 50px;
+
+  background-size: 275px 200px;
+  background-position: 65%, 60%;
+
+  background-color: #333333;
+
+  border: 3px solid;
+
+  font-weight: 900;
+
+  font-size: 14px;
+
+  transition: 1s;
+
+}
+
+button:hover {
+  background-color: #497A2D;
+  color: #333333;
+  border: 3px solid;
+
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+#toggle-audio {
+  position: relative;
+
+  background-image: url(/img/hermetic-tarot-back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 160px;
+  height: 40px;
+
+  left: 170px;
+
+}
