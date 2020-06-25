@@ -63,7 +63,7 @@ h1 {
 
   margin: auto;
 
-  background-image: url('/img/green-leaf-plant-on-brown-wooden-table-top-thumbnail.jpg');
+  background-image: url('../img/green-leaf-plant-on-brown-wooden-table-top-thumbnail.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -142,7 +142,7 @@ h1 {
 .back > div {
   /* outline: cyan dashed 2px; */
 
-  background-image: url(/img/hermetic-tarot-back.jpg);
+  background-image: url('../img/hermetic-tarot-back.jpg');
   background-size: 190px 320px;
 
   width: 100%;
@@ -218,7 +218,7 @@ h1 {
 }
 
 #draw {
-  background-image: url(/img/button-background.jpeg);
+  background-image: url('../img/button-background.jpeg');
 
   transition: 0.5s;
 
@@ -298,7 +298,7 @@ button:hover {
 
   align-self: flex-end;
 
-  background-image: url(/img/hermetic-tarot-back.jpg);
+  background-image: url('../img/hermetic-tarot-back.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 
