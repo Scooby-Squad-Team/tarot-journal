@@ -18,7 +18,7 @@ header > nav {
   right: 10px;
   top: 50px;
   background-color: transparent;
-  }
+}
 
 h1 {
   position: absolute;
@@ -119,11 +119,11 @@ div {
   /* outline: blue dashed 2px; */
 
   display: flex;
-  position: absolute;
+  position: relative;
 
   align-items: center;
 
-  left: 150px;
+  left: 0px;
 
   margin: auto;
 
@@ -178,7 +178,6 @@ div {
 
 #journal > h2:nth-child(2){
   padding-left: 32px;
-  padding-right: ;
 }
 
 
@@ -242,9 +241,10 @@ h2 {
 footer {
   width: 100%;
   color: rgb(164, 182, 150);
-  margin-top: 100px;
+  margin-top: 260px;
   text-align: center;
   padding: 5px;
+  position: relative;
 }
 
 footer > p {
@@ -260,15 +260,15 @@ footer > p > a {
 
 #part-two {
   display: flex;
-  position: absolute;
+  position: relative;
 
   align-items: center;
 
-  left: 150px;
+  left: 0px;
 
   margin: auto;
 
-  top: 900px;
+  top: 200px;
 
   background-image: url(/img/journal-faed38.jpg);
   background-repeat: no-repeat;
@@ -315,14 +315,14 @@ footer > p > a {
 
 #reflection-page {
   display: flex;
-  position: absolute;
+  position: relative;
 
-  left: 150px;
+  align-items: center;
+  left: 0px;
 
   margin: auto;
 
-  top: 1650px;
-
+  top: 250px;
   background-image: url(/img/journal-faed38.jpg);
   background-repeat: no-repeat;
   background-size: cover;
