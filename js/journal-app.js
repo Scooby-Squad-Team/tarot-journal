@@ -26,7 +26,7 @@ function render() {
   futureDivImg.innerHTML = '';
   var futureDivDesc = document.getElementById('future-description');
   futureDivDesc.innerHTML = '';
-  var pastImg = Card.collection[past].imgSrc;
+  var pastImg = '../' + Card.collection[past].imgSrc;
   var pastDesc = Card.collection[past].description;
   var addPastImg = document.createElement('img');
   addPastImg.src = pastImg;
@@ -34,7 +34,7 @@ function render() {
   addPastDesc.textContent = pastDesc;
   pastDivImg.appendChild(addPastImg);
   pastDivDesc.appendChild(addPastDesc);
-  var presentImg = Card.collection[present].imgSrc;
+  var presentImg = '../' + Card.collection[present].imgSrc;
   var presentDesc = Card.collection[present].description;
   var addpresentImg = document.createElement('img');
   addpresentImg.src = presentImg;
@@ -42,7 +42,7 @@ function render() {
   addpresentDesc.textContent = presentDesc;
   presentDivImg.appendChild(addpresentImg);
   presentDivDesc.appendChild(addpresentDesc);
-  var futureImg = Card.collection[future].imgSrc;
+  var futureImg = '../' + Card.collection[future].imgSrc;
   var futureDesc = Card.collection[future].description;
   var addfutureImg = document.createElement('img');
   addfutureImg.src = futureImg;
