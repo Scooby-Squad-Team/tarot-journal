@@ -162,6 +162,7 @@ h1 {
 
 .back > div > p {
   /* outline: green dashed 1px; */
+
   background: none;
 
   font-family: roboto;
@@ -260,20 +261,42 @@ h1 {
 #journal-button {
   display: inline-flex;
 
+  background: none;
+
   position: relative;
   align-self: flex-end;
 
-  top: ;
-  left: -520px;
+  left: -522px;
   bottom: 165px;
+
 }
 
 button {
   width: 250px;
   height: 50px;
 
-  color: aliceblue;
+  background-size: 275px 200px;
+  background-position: 65%, 50%;
+
+  background-color: #333333;
+  color: rgb(179, 202, 162);
+
+  border: 3px solid;
+
+  font-weight: 600;
+
+  font-size: 16px;
+
 }
+
+button:hover {
+  background-color: #497A2D;
+  color: #333333;
+  border: 3px solid;
+}
+
+/* ----------------------------------- */
+
 
 fieldset {
   background-image: none;

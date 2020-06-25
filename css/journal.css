@@ -22,12 +22,14 @@ header > nav {
 
 h1 {
   position: absolute;
-  left: 10px;
+  left: 30px;
   top: 60px;
-  color: #101010;
+  color: #A8C299;
+
   background-color: transparent;
   font-family: 'rye';
-  font-size: 30px;
+  font-size: 40px;
+
   letter-spacing: .10em;
   text-shadow: 0 0 10px #888888;
   }
@@ -59,19 +61,31 @@ ul li a:hover {
 }
 
 #date-dropdown{
+
+  position: relative;
+
+  background: none;
+  
+  left: 150px;
+
   margin-left: 20px;
   margin-bottom: 20px; 
+
+  z-index: 10;
 }
 
 #entry-date {
+  left: 100px;
+
   font-family: 'Oswald', sans-serif;
-  outline: none !important;
   border:2px solid #064F0C;
+
   box-shadow: 0 0 5px #666666;
   height: 35px;
   color: #064F0C;
-  background-color: #333333;
-  text-shadow: 0 0 10px #010801;
+
+  background-color: rgb(197, 218, 181);
+  /* text-shadow: 0 0 10px #010801; */
 }
 
 #submit {
@@ -80,13 +94,13 @@ ul li a:hover {
   border: 2px solid;
   padding: 4px;
   border-radius: 6px 6px;
-  background-color: #333333;
+  background-color: rgb(197, 218, 181);
   text-decoration:none;
   margin-left: 5px;
   height: 35px;
   width: 60px;
   box-shadow: 0 0 5px #666666;
-  text-shadow: 0 0 10px #010801;
+  /* text-shadow: 0 0 10px #010801; */
   font-size: 100%;
 }
 
@@ -97,61 +111,118 @@ ul li a:hover {
   font-family: 'Oswald', sans-serif;
 }
 
-#journal {
-  display: flex;
-  margin: auto;
-  background-image: url('/img/journal-paper.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%; 
+div {
+  background: none;
 }
 
-#cards { 
-  background-color: transparent;
-  /* background-image: none; */
-  display: inline;
-  width: 1000x;
-  /* flex-direction: row;
-  flex-wrap: nowrap; */
-  /* justify-content: center;
+#journal {
+  /* outline: blue dashed 2px; */
+
+  display: flex;
+  position: absolute;
+
   align-items: center;
-  align-content: center; */
-  /* z-index: 10; */
+
+  left: 150px;
+
+  margin: auto;
+
+  top: 150px;
+
+  background-image: url(/img/journal-faed38.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: 0 0 25px #888888, 0 0 15px #064F0C;
+  
+  width: 1000px;
+  height: 700px;
+}
+
+
+#cards { 
+  /* outline: red dashed 2px; */
+
+  background: none;
+  display: inline-flex;
+
+  width: 850px;
+
+  align-self: center;
+  justify-content: center;
+
+  left: 75px;
+
   position: absolute;
 }
 
+#journal > h2 {
+  /* outline: red dashed 1px; */
+
+  background: none;
+  display: inline-flex;
+
+  align-self: flex-start;
+  position: relative;
+
+  text-align: center;
+
+  width: auto;
+
+  left: 200px;
+  top: 70px;
+
+  padding-right: 75px;
+
+}
+
+#journal > h2:nth-child(2){
+  padding-left: 32px;
+  padding-right: ;
+}
+
+
 #past > img {
-  height: 500px;
+  height: 350px;
   margin: 20px;
   box-shadow: 0 0 25px #888888, 0 0 15px #064F0C;
   background: none;
-  /* position: absolute; */
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 #present > img {
-  height: 500px;
+  height: 350px;
   margin: 20px;
   box-shadow: 0 0 25px #888888, 0 0 15px #064F0C;
   background: none;
-  /* position: absolute; */
-  border-radius: 30px;
+
+  border-radius: 10px;
 }
 
 #future > img {
-  height: 500px;
+  height: 350px;
   margin: 20px;
   box-shadow: 0 0 25px #888888, 0 0 15px #064F0C;
   background: none;
-  /* position: absolute; */
-  border-radius: 30px;
+
+  border-radius: 10px;
 }
+
+/* ---------------- IMG TRANSFORM ------------ */
+
+
+#cards > * > img:hover {
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+/* -------------------------------------------- */
 
 
 #description {
   font-family: 'Oswald', sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+  background-color: #A8C299;
 }
 
 h2 {
@@ -179,5 +250,120 @@ footer > p {
 
 footer > p > a {
   color: rgb(86, 107, 71);
+
+}
+
+/* ---------------- REFLECTIONS ------------ */
+
+#part-two {
+  display: flex;
+  position: absolute;
+
+  align-items: center;
+
+  left: 150px;
+
+  margin: auto;
+
+  top: 900px;
+
+  background-image: url(/img/journal-faed38.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: 0 0 25px #888888, 0 0 15px #064F0C;
+  
+  width: 1000px;
+  height: 700px;
+}
+
+#descriptions {
+  outline: red dashed 2px;
+
+  align-self: flex-start;
+  position: relative;
+
+  top: 50px;
+  /* margin-left: 15px; */
+
+  padding: 25px;
+
+}
+
+#descriptions > * {
+  background: none;
+
+  line-height: 24px;
+
+  padding: 7px;
+
+}
+
+#descriptions > * > * {
+  background: none;
+
+  font-family: roboto;
+  font-size: 18px;
+
+  text-indent: 40px;
+}
+
+/* ---------------- USER REFLECTION ------------ */
+
+#reflection-page {
+  display: flex;
+  position: absolute;
+
+  left: 150px;
+
+  margin: auto;
+
+  top: 1650px;
+
+  background-image: url(/img/journal-faed38.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: 0 0 25px #888888, 0 0 15px #064F0C;
+  
+  width: 1000px;
+  height: 700px;
+}
+
+#reflection-page * {
+  background: none;
+}
+
+#reflection-page > h2 {
+  outline: red dashed 2px;
+  position: absolute;
+
+  align-self: flex-start;
+
+  padding: 25px;
+
+  top: 50px;
+
+}
+
+#reflection-form {
+  position: relative;
+
+  align-self: flex-start;
+
+  padding: 25px;
+
+  top: 150px;
+  left: 75px;
+}
+
+#user-reflection {
+  width: 600px;
+  height: 100px;
+
+  align-content: flex-start;
+  text-align: start;
+
+  overflow: scroll;
 
 }

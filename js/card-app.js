@@ -154,11 +154,19 @@ function storeLocal() {
 
 
 function displayButton(){
+
   var journalButton = document.getElementById('journal-button');
+  var anchorElement = document.createElement('a');
+  anchorElement.href = '/pages/journal.html';
+
+  journalButton.appendChild(anchorElement);
+
   var buttonCreate = document.createElement('button');
+
   buttonCreate.textContent = ('Go To Journal For Further Reflection');
 
-  journalButton.appendChild(buttonCreate);
+  anchorElement.appendChild(buttonCreate);
+
 }
 
 
