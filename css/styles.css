@@ -61,23 +61,6 @@ ul li a:hover {
   border: 3px solid;
 }
 
-h1 {
-  /* outline: yellow dashed 2px; */
-
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 10px;
-  font-size: 50px;
-  color: #A8C299;
-  font-family: Rye;
-
-  position: relative;
-
-  width: fit-content;
-  left: 640px;
-  
-
-}
 
 
 #table {
