@@ -124,7 +124,7 @@ article > p {
 
   float: right;
 
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 footer {
@@ -184,4 +184,17 @@ button:hover {
 
   left: 170px;
 
+}
+
+h3 {
+  font-family: Open Sans;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(124, 139, 113);
+  margin: 20px;
+  margin-left: 100px;
+}
+
+#further-reading{
+  
 }
