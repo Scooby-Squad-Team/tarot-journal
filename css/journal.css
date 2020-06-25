@@ -15,10 +15,9 @@ main {
   width: auto;
   height: 2200px;
 
-
-
-
 }
+
+
 
 header > img {
   width: 100%;
@@ -38,14 +37,12 @@ h1 {
   left: 30px;
   top: 60px;
   color: #A8C299;
-
   background-color: transparent;
   font-family: 'rye';
   font-size: 40px;
-
   letter-spacing: .10em;
   text-shadow: 0 0 10px #888888;
-  }
+}
 
 li {
   margin-right: 50px;
@@ -53,12 +50,12 @@ li {
   list-style:none;
   float:left;
   font-family: 'Oswald', sans-serif;
-  }
+}
 
 ul li a{
   display: inline-block;
   background-color: #002A02;
-  border: 2px solid;
+  border: 3px solid;
   padding: 4px;
   border-radius: 6px 6px;
   color: #555555;
@@ -224,6 +221,10 @@ div {
 #cards > * > img:hover {
   transition: 1s;
   transform: scale(1.2);
+}
+
+#cards > * > img {
+  transition: 1s;
 }
 
 /* -------------------------------------------- */
