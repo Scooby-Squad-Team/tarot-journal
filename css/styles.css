@@ -302,17 +302,16 @@ button:hover {
 
 #toggle-audio-div {
   background: none;
-  position: absolute;
+  position: relative;
 
   align-self: flex-end;
 
-  left: 1240px;
+  left: 1350px;
+  bottom: 60px;
 
 }
 
 #toggle-audio {
-  position: relative;
-  align-self: flex-end;
 
   width: 160px;
   height: 50px;
@@ -323,9 +322,6 @@ button:hover {
   background-position: 43% 50%;
 
   font-weight: 900;
-
-  left: 20px;
-  bottom: 10px;
 
 }
 
