@@ -412,18 +412,9 @@ footer > p > a {
 
 
 button {
-  width: 250px;
-  height: 50px;
-
-  background-size: 275px 200px;
-  background-position: 65%, 60%;
-
-  background-color: #333333;
-
-  border: 3px solid;
+  background-position: 49%, 60%;
 
   font-weight: 900;
-
   font-size: 14px;
 
   transition: 1s;
@@ -443,7 +434,7 @@ button:hover {
   position: relative;
 
   background-image: url('../img/hermetic-tarot-back.jpg');
-  background-size: cover;
+  background-size: 200px;
   background-repeat: no-repeat;
 
   width: 160px;
