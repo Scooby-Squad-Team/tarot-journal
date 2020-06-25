@@ -152,7 +152,7 @@ div {
   justify-content: center;
 
   left: 75px;
-
+  
   position: absolute;
 }
 
@@ -216,6 +216,9 @@ div {
   transform: scale(1.2);
 }
 
+#cards > * > img {
+  transition: 1s;
+}
 /* -------------------------------------------- */
 
 
