@@ -270,16 +270,17 @@ button {
   height: 50px;
 
   background-size: 275px 200px;
-  background-position: 65%, 50%;
+  background-position: 65%, 60%;
 
   background-color: #333333;
-  color: rgb(179, 202, 162);
 
   border: 3px solid;
 
-  font-weight: 600;
+  font-weight: 900;
 
-  font-size: 16px;
+  font-size: 14px;
+
+  transition: 1s;
 
 }
 
@@ -287,6 +288,26 @@ button:hover {
   background-color: #497A2D;
   color: #333333;
   border: 3px solid;
+
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+#toggle-audio {
+  position: relative;
+
+  align-self: flex-end;
+
+  background-image: url(/img/hermetic-tarot-back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 160px;
+  height: 50px;
+
+  left: 20px;
+  bottom: 10px;
+
 }
 
 /* ----------------------------------- */
@@ -298,7 +319,7 @@ fieldset {
 }
 
 legend {
-  background-color: rgba(168, 173, 192, 0.774);
+  background-color: rgba(226, 231, 250, 0.774);
   border: 1px solid black;
   padding: 5px;
   border-radius: 25px;

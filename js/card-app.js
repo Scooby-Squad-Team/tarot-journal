@@ -155,7 +155,10 @@ function storeLocal() {
 
 function displayButton(){
 
+
   var journalButton = document.getElementById('journal-button');
+  journalButton.innerHTML = '';
+
   var anchorElement = document.createElement('a');
   anchorElement.href = '/pages/journal.html';
 
@@ -167,21 +170,6 @@ function displayButton(){
 
   anchorElement.appendChild(buttonCreate);
 
-}
-
-function controlSong() {
-  var targetElement = document.getElementById('ambience');
-  targetElement.volume = .5;
-}
-
-document.getElementById('toggle-audio').addEventListener('click', handleToggle);
-function handleToggle(){
-  var song = document.getElementById('ambience');
-  if (song.paused) {
-    song.play();
-  } else {
-    song.pause();
-  }
 }
 
 // event listener for submit
@@ -199,6 +187,5 @@ function handleEvent(event) {
   displayButton();
 }
 
-controlSong();
 
 
