@@ -22,7 +22,7 @@ header > nav {
 
 h1 {
   position: absolute;
-  left: 10px;
+  left: 30px;
   top: 60px;
   color: #A8C299;
 
@@ -207,6 +207,16 @@ div {
 
   border-radius: 10px;
 }
+
+/* ---------------- IMG TRANSFORM ------------ */
+
+
+#cards > * > img:hover {
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+/* -------------------------------------------- */
 
 
 #description {
