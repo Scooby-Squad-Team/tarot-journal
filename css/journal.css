@@ -140,7 +140,7 @@ div {
   top: 150px;
   left: 150px;
 
-  background-image: url(/img/journal-faed38.jpg);
+  background-image: url('../img/journal-faed38.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -277,7 +277,7 @@ footer > p > a {
 
   top: 900px;
 
-  background-image: url(/img/journal-faed38.jpg);
+  background-image: url('../img/journal-faed38.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -330,7 +330,7 @@ footer > p > a {
 
   top: 1650px;
 
-  background-image: url(/img/journal-faed38.jpg);
+  background-image: url('../img/journal-faed38.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -442,7 +442,7 @@ button:hover {
 #toggle-audio {
   position: relative;
 
-  background-image: url(/img/hermetic-tarot-back.jpg);
+  background-image: url('../img/hermetic-tarot-back.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 
