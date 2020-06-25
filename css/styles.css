@@ -1,10 +1,12 @@
 * {
   background-color: #222222;
-}
 
+  /* outline: cyan dashed 3px; */
+}
 
 header {
   height: 100px;
+  width: 100%;
 }
 
 header > img {
@@ -59,6 +61,24 @@ ul li a:hover {
   border: 3px solid;
 }
 
+h1 {
+  /* outline: yellow dashed 2px; */
+
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 50px;
+  color: #A8C299;
+  font-family: Rye;
+
+  position: relative;
+
+  width: fit-content;
+  left: 640px;
+  
+
+}
+
 
 #table {
   /* outline: green dashed 2px; */
@@ -68,8 +88,10 @@ ul li a:hover {
   width: 1330px;
   height: 760px;
 
+
   margin: auto;
   margin-top: 50px;
+
   background-image: url('../img/green-leaf-plant-on-brown-wooden-table-top-thumbnail.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -80,7 +102,6 @@ ul li a:hover {
 /* ----- past card ----- */
 
 .card-wrapper {
-  /* outline: blue dashed 2px; */
   position: absolute;
 
   width: 190px;
@@ -258,19 +279,19 @@ ul li a:hover {
 /* ----- JOURNAL LINK BUTTON ----- */
 
 #journal-button {
-  /* display: inline-flex; */
 
   /* outline: red dashed 2px; */
 
   background: none;
 
   position: relative;
+
+  height: fit-content;
+
   align-self: flex-end;
-
-
-  left: -522px;
-
-  bottom: 165px;
+  
+  right: 550px;
+  bottom: 150px;
 
 }
 
@@ -287,7 +308,7 @@ ul li a:hover {
   background-repeat: no-repeat;
   background-position: 49% 50%;
 
-  border: 3px solid;
+
 
   font-weight: 900;
 
@@ -307,13 +328,32 @@ button:hover {
 
 }
 
+#toggle-audio-div {
+  background: none;
+  position: absolute;
+
+  margin: auto;
+
+
+
+  align-self: flex-end;
+  width: fit-content;
+
+  left: 1300px;
+  bottom: 62px;
+
+  z-index: 2;
+
+  transition: 1s;
+
+}
+
 #toggle-audio {
-  position: relative;
+  position: absolute;
 
-  width: 160px;
-  height: 50px;
 
-  float: right;
+  font-weight: 900;
+
 
   background-image: url('../img/hermetic-tarot-back.jpg');
   background-size: 180px;
@@ -322,8 +362,6 @@ button:hover {
 
   font-weight: 900;
 
-  right: 200px;
-  bottom: 60px;
 
 }
 
