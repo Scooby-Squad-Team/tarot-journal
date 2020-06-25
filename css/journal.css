@@ -131,13 +131,9 @@ div {
 #journal {
   /* outline: blue dashed 2px; */
   display: flex;
-  position: relative;
+  position: absolute;
 
   align-items: center;
-
-
-  left: 0px;
-
 
   margin: auto;
 
@@ -167,7 +163,6 @@ div {
   justify-content: center;
 
   left: 75px;
-  
   position: absolute;
 }
 
@@ -193,6 +188,7 @@ div {
 
 #journal > h2:nth-child(2){
   padding-left: 32px;
+  padding-right: ;
 }
 
 
@@ -230,9 +226,6 @@ div {
   transform: scale(1.2);
 }
 
-#cards > * > img {
-  transition: 1s;
-}
 /* -------------------------------------------- */
 
 
@@ -256,10 +249,9 @@ h2 {
 footer {
   width: 100%;
   color: rgb(164, 182, 150);
-  margin-top: 260px;
+  margin-top: 100px;
   text-align: center;
   padding: 5px;
-  position: relative;
 }
 
 footer > p {
@@ -275,15 +267,15 @@ footer > p > a {
 
 #part-two {
   display: flex;
-  position: relative;
+  position: absolute;
 
   align-items: center;
 
-  left: 0px;
+  left: 150px;
 
   margin: auto;
 
-  top: 200px;
+  top: 900px;
 
   background-image: url(/img/journal-faed38.jpg);
   background-repeat: no-repeat;
@@ -330,14 +322,14 @@ footer > p > a {
 
 #reflection-page {
   display: flex;
-  position: relative;
+  position: absolute;
 
-  align-items: center;
-  left: 0px;
+  left: 150px;
 
   margin: auto;
 
-  top: 250px;
+  top: 1650px;
+
   background-image: url(/img/journal-faed38.jpg);
   background-repeat: no-repeat;
   background-size: cover;
