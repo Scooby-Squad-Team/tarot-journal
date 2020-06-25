@@ -160,7 +160,7 @@ function displayButton(){
   journalButton.innerHTML = '';
 
   var anchorElement = document.createElement('a');
-  anchorElement.href = '/pages/journal.html';
+  anchorElement.href = 'pages/journal.html';
 
   journalButton.appendChild(anchorElement);
 
