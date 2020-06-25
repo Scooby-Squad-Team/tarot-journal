@@ -62,6 +62,15 @@ function render() {
   // render full card descriptions
 }
 
+function fillReflectionTextArea() {
+  var selectElement = document.getElementById('user-reflection');
+  if (dateSelected.reflection){
+    selectElement.value = dateSelected.reflection;
+  } else {
+    selectElement.value = '';
+  }
+}
+
 function populateDateDropdown() {
   var selectElement = document.getElementById('entry-date');
   selectElement.innerHTML = '';
@@ -90,29 +99,27 @@ function handleDateSelect(event) {
     }
   }
   render();
+  fillReflectionTextArea();
 }
 
 var reflection = document.getElementById('reflection-form');
 reflection.addEventListener('submit', handleSubmitReflection);
 
 function handleSubmitReflection(event) {
-  // save reflection entries to array[index].reflection
-  // resave array to localstorage (json.stringify, setItem)
+
+
 
   event.preventDefault();
   var selectElement = document.getElementById('user-reflection');
-  if(dateSelected.reflection === null){
-    dateSelected.reflection = selectElement.value;
-  }
-  else{
-    dateSelected.reflection = dateSelected.reflection + ' ' + selectElement.value;
-  }
+  dateSelected.reflection = selectElement.value;
+
 
   var stringifyPastReading = JSON.stringify(pastReading);
   localStorage.setItem('past-readings', stringifyPastReading);
 
   getJournalEntries();
   render();
+  fillReflectionTextArea();
 }
 
 
