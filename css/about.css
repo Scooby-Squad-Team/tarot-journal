@@ -1,0 +1,187 @@
+* {
+  background-color: #222222;
+}
+
+header {
+  height: 150px;
+ 
+}
+
+header > img {
+  width: 100%;
+  height: 100px;
+  opacity: .3;
+}
+
+header > nav {
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  background-color: transparent;
+  }
+
+li {
+  margin-right: 50px;
+  display:block;
+  list-style:none;
+  float:left;
+  }
+
+ul li a{
+  display: inline-block;
+  background-color: #333333;
+  border: 3px solid;
+  padding: 4px;
+  border-radius: 6px 6px;
+  color: rgb(124, 139, 113);
+  text-decoration:none;
+  }
+
+ul li a:hover {
+  background-color: #497A2D;
+  color: #333333;
+  border: 4px solid;
+}
+
+#about-us {
+  /* outline: blue dashed 2px; */
+
+  float: left;
+  width: 1350px;
+
+  height: auto;
+
+  margin-left: 100px;
+}
+
+h1 {
+  font-family: Open Sans;
+  font-size: 65px;
+  font-weight: bold;
+
+  color: rgb(124, 139, 113);
+
+  margin: 20px;
+  margin-left: 100px;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 5px;
+  padding: 5px;
+
+  font-family: Open Sans;
+  font-weight: bold;
+
+  background: none;
+}
+
+article {
+  /* outline: red dashed 1px; */
+  float: left;
+
+  background-color: #4d4d4d;
+  box-shadow: 2px 1px 2px rgb(138, 138, 138);
+
+
+  width: 650px;
+  height: 450px;
+  
+  /* width: fit-content; */
+  margin: auto;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 15px;
+
+  color: whitesmoke;
+
+
+}
+
+img {
+  width: 37.5%;
+  height: 85%;
+
+  margin-left: 10px;
+  box-shadow: 2px 1px 3px whitesmoke;
+
+}
+
+article > p {
+  /* outline: yellowgreen dashed 2px; */
+
+  background: none;
+
+  font-size: 20px;
+  font-family: roboto;
+  font-weight: 100;
+
+  width: 320px;
+  height: 300px;
+
+  margin-right: 20px;
+  padding: 5px;
+
+  float: right;
+
+  overflow: scroll;
+}
+
+footer {
+  width: 100%;
+  color:  rgb(164, 182, 150);
+  margin-top: 100px;
+  text-align: center;
+  padding: 5px;
+}
+
+footer > p {
+  padding: 2px;
+}
+
+footer > p > a {
+  color: rgb(86, 107, 71);
+}
+
+
+button {
+  width: 250px;
+  height: 50px;
+
+  background-size: 275px 200px;
+  background-position: 65%, 60%;
+
+  background-color: #333333;
+
+  border: 3px solid;
+
+  font-weight: 900;
+
+  font-size: 14px;
+
+  transition: 1s;
+
+}
+
+button:hover {
+  background-color: #497A2D;
+  color: #333333;
+  border: 3px solid;
+
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+#toggle-audio {
+  position: relative;
+
+  background-image: url(/img/hermetic-tarot-back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 160px;
+  height: 40px;
+
+  left: 170px;
+
+}
