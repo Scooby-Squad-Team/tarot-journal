@@ -45,15 +45,12 @@ ul li a:hover {
 }
 
 h1 {
-  color: aliceblue;
   padding: 10px;
   text-align: center;
   margin-bottom: 10px;
   font-size: 50px;
   color: #A8C299;
-
   font-family: Rye;
-
 }
 
 #table {
@@ -69,8 +66,6 @@ h1 {
   background-image: url('/img/green-leaf-plant-on-brown-wooden-table-top-thumbnail.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
-
-
 }
 
 
