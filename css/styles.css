@@ -1,5 +1,6 @@
 * {
   background-color: #222222;
+
 }
 
 
@@ -251,19 +252,18 @@ h1 {
 /* ----- JOURNAL LINK BUTTON ----- */
 
 #journal-button {
-  /* display: inline-flex; */
-
   /* outline: red dashed 2px; */
 
   background: none;
 
   position: relative;
+
+  height: fit-content;
+
   align-self: flex-end;
-
-
-  left: -522px;
-
-  bottom: 165px;
+  
+  right: 550px;
+  bottom: 150px;
 
 }
 
@@ -280,7 +280,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: 49% 50%;
 
-  border: 3px solid;
+  /* border: 3px solid; */
 
   font-weight: 900;
 
@@ -300,13 +300,22 @@ button:hover {
 
 }
 
+#toggle-audio-div {
+  background: none;
+  position: absolute;
+
+  align-self: flex-end;
+
+  left: 1240px;
+
+}
+
 #toggle-audio {
   position: relative;
+  align-self: flex-end;
 
   width: 160px;
   height: 50px;
-
-  float: right;
 
   background-image: url('../img/hermetic-tarot-back.jpg');
   background-size: 180px;
@@ -315,8 +324,8 @@ button:hover {
 
   font-weight: 900;
 
-  right: 200px;
-  bottom: 60px;
+  left: 20px;
+  bottom: 10px;
 
 }
 
