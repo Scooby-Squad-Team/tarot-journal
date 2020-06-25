@@ -169,3 +169,24 @@ new Card(moonImgSrc,'The Moon',moonBlurb,moonDescription);
 new Card(sunImgSrc,'The Sun',sunBlurb,sunDescription);
 new Card(judgementImgSrc,'Judgement',judgementBlurb,judgementDescription);
 new Card(worldImgSrc,'The World',worldBlurb,worldDescription);
+
+
+// ========== MUSIC ========== //
+
+function controlSong() {
+  var targetElement = document.getElementById('ambience');
+  targetElement.volume = .5;
+}
+
+document.getElementById('toggle-audio').addEventListener('click', handleToggle);
+function handleToggle(){
+  var song = document.getElementById('ambience');
+  if (song.paused) {
+    song.play();
+  } else {
+    song.pause();
+  }
+}
+
+controlSong();
+
