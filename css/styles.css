@@ -271,13 +271,15 @@ ul li a:hover {
   position: relative;
 
   height: fit-content;
+  width: 250px;
 
   align-self: flex-end;
   
-  right: 550px;
+  right: 715px;
   bottom: 150px;
 
 }
+
 
 #journal-button > a > button {
   width: 250px;
@@ -312,15 +314,15 @@ button:hover {
 
 #toggle-audio-div {
   background: none;
-  position: absolute;
+  position: relative;
 
   margin: auto;
 
   align-self: flex-end;
   width: fit-content;
 
-  left: 1300px;
-  bottom: 92px;
+  top: 345px;
+  left: 20px;
 
   z-index: 2;
 
@@ -329,7 +331,7 @@ button:hover {
 }
 
 #toggle-audio {
-  position: absolute;
+  position: relative;
 
   font-weight: 900;
 
@@ -342,6 +344,8 @@ button:hover {
 
   width: 160px;
   height: 50px;
+
+  transition: 1s;
 
 }
 
