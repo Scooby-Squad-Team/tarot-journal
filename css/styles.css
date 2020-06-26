@@ -89,8 +89,9 @@ h1 {
   height: 760px;
 
 
-  margin: auto;
+  /* margin: auto; */
   margin-top: 50px;
+  margin-left: 150px;
 
   background-image: url('../img/green-leaf-plant-on-brown-wooden-table-top-thumbnail.jpg');
   background-repeat: no-repeat;
@@ -308,8 +309,6 @@ h1 {
   background-repeat: no-repeat;
   background-position: 49% 50%;
 
-
-
   font-weight: 900;
 
   font-size: 14px;
@@ -334,13 +333,11 @@ button:hover {
 
   margin: auto;
 
-
-
   align-self: flex-end;
   width: fit-content;
 
   left: 1300px;
-  bottom: 62px;
+  bottom: 92px;
 
   z-index: 2;
 
@@ -351,9 +348,7 @@ button:hover {
 #toggle-audio {
   position: absolute;
 
-
   font-weight: 900;
-
 
   background-image: url('../img/hermetic-tarot-back.jpg');
   background-size: 180px;
@@ -362,6 +357,8 @@ button:hover {
 
   font-weight: 900;
 
+  width: 160px;
+  height: 50px;
 
 }
 
